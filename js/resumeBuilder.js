@@ -28,8 +28,43 @@ var bio = {
        
 };
 
+
+
+var work = {};
+work.position = "Web Developer";
+work.employer = "Advertising agency 'Earth and Heaven'";
+work.years = 3;
+
+var education = {};
+education["name"] = "Nova Southeastern University";
+education["years"] = "2011-2015";
+education["city"] = "Moscow";
+
+
+
+var education = {
+	"schools": [
+        {
+		"name": "Moscow Commercial College",
+		"city": "Moscow, Russian",
+		"degree": "BA",
+		"major": ["Merchant"]
+	    }, 
+        {
+		"name": "Peoples’ Friendship University of Russia",
+		"city": "Moscow, Russian",
+		"degree": "BA",
+		"major": ["State and municipal management"]
+	}
+  ]
+}
+
+
+
+
+
 $("#main").append( 
-    bio.name + " " + bio.lastName 
+    bio['name'] + " " + bio['lastName'] 
     + "<br>" 
     + "Мне: " + bio.age 
     + "<br>"
@@ -38,4 +73,9 @@ $("#main").append(
     + "Мои навыки: " + bio.skills.join(" ")
     + "<br>"
     + "Обо мне: " + bio.message
+    + "<hr>"
+    + "Position: " + work['position']
+    + "<br>"
+    + "Education: " + education.name
 );
+
