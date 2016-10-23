@@ -1,81 +1,113 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
-
-//$("#main").append("Miroslav");
-
-
-var mySkills = ["JavaScript", "PHP", "HTML", "CSS", "Python", "JQuery", "Bootstrap", "Photoshop"];
 
 
 
+var work = {
 
-var bio = {
-  "name" : "Miroslav",
-  "lastName": "Bronin",
-  "role": "Web Developer",
-  "contacts": { 
-      "phone": "8(926)320-56-04",
-      "email": "rekreg@bk.ru",
-      "gitHub": "rekreg",
-      "vk": "https://vk.com/id25976095",
-      "location": "Moscow"
-  },
-  "age": 32,
-  "message": "I am very skilled person, and I love to be web developer",
-  "skills": mySkills,
-  "url": "images/me.jpg"
-       
-};
+	"jobs": [
 
+		{
+			"employer": "Advertising agency 'Earth and Heaven'",
+			"title": "Web Developer",
+			"location": "Moscow, Russia",
+			"dates": "2010-2012",
+			"description": ""
+		}, {
+			"employer": "Advertising agency 'Earth and Heaven'",
+			"title": "Web Developer",
+			"location": "Moscow, Russia",
+			"dates": "2010-2012",
+			"description": ""
+		}
 
+	]
 
-var work = {};
-work.position = "Web Developer";
-work.employer = "Advertising agency 'Earth and Heaven'";
-work.years = 3;
-
-var education = {};
-education["name"] = "Nova Southeastern University";
-education["years"] = "2011-2015";
-education["city"] = "Moscow";
+}
 
 
+var projects = {
 
-var education = {
-	"schools": [
+    "projects": [
+        
         {
-		"name": "Moscow Commercial College",
-		"city": "Moscow, Russian",
-		"degree": "BA",
-		"major": ["Merchant"]
-	    }, 
+            "title": "",
+            "dates": "",
+            "description": "",
+            "images": ""
+            
+        },
+        
         {
-		"name": "Peoples’ Friendship University of Russia",
-		"city": "Moscow, Russian",
-		"degree": "BA",
-		"major": ["State and municipal management"]
-	}
-  ]
+            "title": "",
+            "dates": "",
+            "description": "",
+            "images": ""
+            
+        }
+        
+    ]
 }
 
 
 
+var bio = {
+
+	"name": "Nikolaev Andrey",
+	"role": "Web Developer",
+	"welcomeMessage": "I am very skilled person, and I love to be web developer",
+	"biopic": "images/Andrey.jpg",
+	"contacts": {
+		"mobile": "+79263205604",
+		"email": "rekreg@bk.ru",
+		"github": "rekreg",
+		"twitter": "-",
+		"location": "Moscow"
+	},
+	"skills": ["JavaScript", "PHP", "HTML", "CSS", "Python", "JQuery", "Bootstrap", "Photoshop"]
+
+}
 
 
-$("#main").append( 
-    bio['name'] + " " + bio['lastName'] 
-    + "<br>" 
-    + "Мне: " + bio.age 
-    + "<br>"
-    + "Мой телефон: " + bio.contacts.phone
-    + "<br>" 
-    + "Мои навыки: " + bio.skills.join(" ")
-    + "<br>"
-    + "Обо мне: " + bio.message
-    + "<hr>"
-    + "Position: " + work['position']
-    + "<br>"
-    + "Education: " + education.name
-);
+var education = {
+
+	"schools": [{
+			"name": "Moscow Commercial College",
+			"location": "Moscow, Russian",
+			"degree dates": "BA",
+			"url": "http://www.college39.ru",
+			"majors": ["Merchant"]
+
+		}, {
+			"name": "Peoples’ Friendship University of Russia",
+			"location": "Moscow, Russian",
+			"degree dates": "BA",
+			"url": "http://www.rudn.ru/en_new/",
+			"majors": ["State and municipal management"]
+
+		}
+
+
+
+	],
+	"onlineCourser": [{
+			"title": "",
+			"school": "",
+			"dates": "",
+			"url": ""
+		},
+
+		{
+			"title": "",
+			"school": "",
+			"dates": "",
+			"url": ""
+		}
+
+
+
+	]
+
+}
+
+
+
 
